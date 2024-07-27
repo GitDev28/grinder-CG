@@ -33,7 +33,7 @@ CREDITS:
 
 ### 1. Download:
 ```
-git clone https://github.com/GitDev28/grinder-CG.git
+git clone https://github.com/AnonGhostID/grinder-CG.git
 ```
 
 ### 2. Get inside the folder
