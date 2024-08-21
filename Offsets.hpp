@@ -1,26 +1,26 @@
 #pragma once
-// **Updated to Game Version v3.0.77.28 (Season 22)**
-// Update: 14/8/2024
+// **Updated to Game Version v3.0.78.32 (Season 22)**
+// Update: 21/8/2024
 
 // Core
 constexpr long OFF_REGION = 0x140000000;                      //[Static]->Region
-constexpr long OFF_LEVEL = 0x17ec494;                         //[Miscellaneous]->LevelName
-constexpr long OFF_LOCAL_PLAYER = 0x23e90b8;                  //[Miscellaneous]->LocalPlayer
-constexpr long OFF_ENTITY_LIST = 0x1f15ec8;                   //[Miscellaneous]->cl_entitylist
+constexpr long OFF_LEVEL = 0x17ec544;                         //[Miscellaneous]->LevelName
+constexpr long OFF_LOCAL_PLAYER = 0x23e91f8;                  //[Miscellaneous]->LocalPlayer
+constexpr long OFF_ENTITY_LIST = 0x1f15f88;                   //[Miscellaneous]->cl_entitylist
     
 // Buttons
-constexpr long OFF_IN_ATTACK = 0x0769b5d8;                    //[Buttons]->in_attack
-constexpr long OFF_IN_JUMP = 0x0769b6e0;                      //[Buttons]->in_jump
-constexpr long OFF_IN_DUCK = 0x0769b7e8;                      //[Buttons]->in_duck
-constexpr long OFF_IN_FORWARD = 0x0769b528;                   //[Buttons]->in_forward
+constexpr long OFF_IN_ATTACK = 0x0769b658;                    //[Buttons]->in_attack
+constexpr long OFF_IN_JUMP = 0x0769b778;                      //[Buttons]->in_jump
+constexpr long OFF_IN_DUCK = 0x0769b868;                      //[Buttons]->in_duck
+constexpr long OFF_IN_FORWARD = 0x0769b5a8;                   //[Buttons]->in_forward
 constexpr long OFF_TRAVERSAL_START_TIME = 0x2b70;             //[Buttons]->m_traversalStartTime
 constexpr long OFF_TRAVERSAL_PROGRESS = 0x2b6c;               //[Buttons]->m_traversalProgress
 constexpr long OFF_WALL_RUN_START_TIME = 0x3614;              //[Buttons]->m_wallRunStartTime
 constexpr long OFF_WALL_RUN_CLEAR_TIME = 0x3618;              //[Buttons]->m_wallRunClearTime
     
 // Player
-constexpr long OFF_VIEW_MATRIX = 0x11a350;                    //[RecvTable.DT_Player]->ViewMatrix
-constexpr long OFF_VIEW_RENDER = 0x769b4d8;                   //[RecvTable.DT_Player]->ViewRender
+constexpr long OFF_VIEW_MATRIX = 0x11a350;                    //[Miscellaneous]->ViewMatrix
+constexpr long OFF_VIEW_RENDER = 0x769b558;                   //[Miscellaneous]->ViewRender
 constexpr long OFF_ZOOMING = 0x1be1;                          //[RecvTable.DT_Player]->m_bZooming
 constexpr long OFF_LOCAL_ORIGIN = 0x017c;                     //[DataMap.CBaseViewModel]->m_vecAbsOrigin
 constexpr long OFF_ABSVELOCITY = 0x0170;                      //[DataMap.C_BaseEntity]->m_vecAbsVelocity
@@ -42,7 +42,7 @@ constexpr long OFF_STUDIOHDR = 0x1000;                         //[Miscellaneous]
 constexpr long OFF_BONES = 0x0db0 + 0x48;                     //[RecvTable.DT_BaseAnimating]->m_nForceBone + 0x48
 constexpr long OFF_CAMERAORIGIN = 0x1ee0;                     //[Miscellaneous]->CPlayer!camera_origin
 constexpr long OFF_MODELNAME = 0x0030;                        //[DataMap.C_BaseEntity]->m_ModelName     
-constexpr long OFF_NAMELIST = 0xd3503c0;                      //[Miscellaneous]->NameList
+constexpr long OFF_NAMELIST = 0xd350450;                      //[Miscellaneous]->NameList
 constexpr long OFF_YAW = 0x223c - 0x8;                        //[DataMap.C_Player]=>m_currentFramePlayer.m_ammoPoolCount - 0x8
 constexpr long OFF_NAMEINDEX = 0x058c;                        //[RecvTable.DT_BaseEntity]->m_instanceNameIndex
 
@@ -63,5 +63,5 @@ constexpr long HIGHLIGHT_TYPE_SIZE = 0x34;
 constexpr long OFF_GLOW_THROUGH_WALL = 0x26c;                 //[DT_HighlightSettings].?
 constexpr long OFF_GLOW_FIX = 0x278;
 constexpr long OFF_GLOW_HIGHLIGHT_ID = 0x29C;                 //[DT_HighlightSettings].m_highlightServerActiveStates
-constexpr long OFF_GLOW_HIGHLIGHTS = 0xb13c620;
+constexpr long OFF_GLOW_HIGHLIGHTS = 0xb13c6a0;
 constexpr long OFF_GLOW_ENABLE = 0x26c;                       //[DT_HighlightSettings].?

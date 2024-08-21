@@ -16,7 +16,7 @@ sudo pacman -Sy base-devel libx11 libxtst libxrender
 `
 </details>
 
-**Updated to Game Version v3.0.76.22 (Season 22) (06.08.24)**
+**Updated to Game Version v3.0.78.32 (Season 22) (21.08.24)**
 
 ### 0. Introduction:
 ```

@@ -90,7 +90,7 @@ struct AimBot {
             // Sniper Weapons
             //weaponId == WEAPON_LONGBOW ||
             //weaponId == WEAPON_CHARGE_RIFLE ||
-            //weaponId == WEAPON_SENTINEL ||
+            weaponId == WEAPON_SENTINEL ||
 
             // RED Weapons
             weaponId == WEAPON_WINGMAN ||
