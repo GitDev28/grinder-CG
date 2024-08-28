@@ -1,6 +1,6 @@
 #pragma once
-// **Updated to Game Version v3.0.78.32 (Season 22)**
-// Update: 21/8/2024
+// **Updated to Game Version v3.0.79.44 (Season 22)**
+// Update: 28/8/2024
 
 // Core
 constexpr long OFF_REGION = 0x140000000;                      //[Static]->Region
@@ -42,7 +42,7 @@ constexpr long OFF_STUDIOHDR = 0x1000;                         //[Miscellaneous]
 constexpr long OFF_BONES = 0x0db0 + 0x48;                     //[RecvTable.DT_BaseAnimating]->m_nForceBone + 0x48
 constexpr long OFF_CAMERAORIGIN = 0x1ee0;                     //[Miscellaneous]->CPlayer!camera_origin
 constexpr long OFF_MODELNAME = 0x0030;                        //[DataMap.C_BaseEntity]->m_ModelName     
-constexpr long OFF_NAMELIST = 0xd350450;                      //[Miscellaneous]->NameList
+constexpr long OFF_NAMELIST = 0xd388450;                      //[Miscellaneous]->NameList
 constexpr long OFF_YAW = 0x223c - 0x8;                        //[DataMap.C_Player]=>m_currentFramePlayer.m_ammoPoolCount - 0x8
 constexpr long OFF_NAMEINDEX = 0x058c;                        //[RecvTable.DT_BaseEntity]->m_instanceNameIndex
 
