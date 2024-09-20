@@ -5,7 +5,7 @@ namespace mem {
     pid_t GetPID() {
         if (m_pid > 0) return m_pid;
         char buf[512];
-        FILE* cmd_pipe = popen("pidof -s r5apex.exe", "r");
+        FILE* cmd_pipe = popen("ps aux | grep '[r]5apex.exe' | awk '{print $2}'", "r");
         fgets(buf, 512, cmd_pipe);
         pid_t pid = strtoul(buf, NULL, 10);
         pclose(cmd_pipe);
