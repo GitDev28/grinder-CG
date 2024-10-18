@@ -276,7 +276,7 @@ struct Player {
             mem::Write<int>(basePointer + OFF_GLOW_FIX, 0);
         }
         
-        //item Glow
+        //item Glow UPDATE!
         const std::vector<uint8_t> ItemHighlightID = { 15, 42, 47, 54, 65, 9, 58 }; // Gold, Red, Purple, Blue, Grey, Weapons, Ammo
 
         if (cl->FEATURE_LOBA_ON) {
