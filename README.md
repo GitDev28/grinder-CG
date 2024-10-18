@@ -2,12 +2,17 @@
 <summary>Debian based dependencies</summary>
 
 ## Intall build-essential / libx11-dev / libxtst-dev / libxrender-dev (Mandatory. You only need to do this once) !!!
-`
+```
 sudo apt-get install build-essential libx11-dev libxtst-dev libxrender-dev
-`
-</details>
+````
 
-<details>
+## Got error like this?
+ `X11/extensions/Xcomposite.h: No such file or directory #include <X11/extensions/Xcomposite.h>`
+
+### Then install this: 
+```sudo apt-get install libxcomposite-dev```
+
+
 <summary>Arch based dependencies</summary>
 
 ## Intall base-devel / libx11 / libxtst / libxrender (Mandatory. You only need to do this once) !!!
