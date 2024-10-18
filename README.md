@@ -1,7 +1,7 @@
 <details>
 <summary>Debian based dependencies</summary>
 
-## Intall build-essential / libx11-dev / libxtst-dev / libxrender-dev (Mandatory. You only need to do this once) !!!
+## Install build-essential / libx11-dev / libxtst-dev / libxrender-dev (Mandatory. You only need to do this once) !!!
 ```
 sudo apt-get install build-essential libx11-dev libxtst-dev libxrender-dev
 ````
@@ -15,7 +15,7 @@ sudo apt-get install build-essential libx11-dev libxtst-dev libxrender-dev
 
 <summary>Arch based dependencies</summary>
 
-## Intall base-devel / libx11 / libxtst / libxrender (Mandatory. You only need to do this once) !!!
+## Install base-devel / libx11 / libxtst / libxrender (Mandatory. You only need to do this once) !!!
 `
 sudo pacman -Sy base-devel libx11 libxtst libxrender
 `
