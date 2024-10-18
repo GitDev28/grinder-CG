@@ -277,22 +277,17 @@ struct Player {
         }
         
         //item Glow
+        const std::vector<uint8_t> ItemHighlightID = { 15, 42, 47, 54, 65, 9, 58 }; // Gold, Red, Purple, Blue, Grey, Weapons, Ammo
+
         if (cl->FEATURE_LOBA_ON) {
-            for (int highlightId = 34; highlightId < 40; highlightId++) {
-                const GlowMode newGlowMode = { 137,0,0,127 };
+            for (int highlightId : ItemHighlightID) {
+                const GlowMode newGlowMode = { 137,0,0,127 }; // Or whatever glow settings you want
                 const GlowMode oldGlowMode = mem::Read<GlowMode>(highlightSettingsPtr + (HIGHLIGHT_TYPE_SIZE * highlightId) + 0);
                 
-                if (newGlowMode != oldGlowMode)
+                if (newGlowMode != oldGlowMode) {
                     mem::Write<GlowMode>(highlightSettingsPtr + (HIGHLIGHT_TYPE_SIZE * highlightId) + 0, newGlowMode);
-            } 
-        } else {
-            for (int highlightId = 34; highlightId < 40; highlightId++) {
-                const GlowMode newGlowMode = { 135,135,32,64 };
-                const GlowMode oldGlowMode = mem::Read<GlowMode>(highlightSettingsPtr + (HIGHLIGHT_TYPE_SIZE * highlightId) + 0);
-                
-                if (newGlowMode != oldGlowMode)
-                mem::Write<GlowMode>(highlightSettingsPtr + (HIGHLIGHT_TYPE_SIZE * highlightId) + 0, newGlowMode);
-            } 
+                }
+            }
         }
     }
 
