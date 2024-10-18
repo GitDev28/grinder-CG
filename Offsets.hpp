@@ -1,18 +1,18 @@
 #pragma once
-// **Updated to Game Version v3.0.80.27 (Season 22 - Update SPLIT 2)**
-// Update: 20/9/2024
+// **Updated to Game Version v3.0.82.42 (Season 22)**
+// Update: 18/10/2024
 
 // Core
 constexpr long OFF_REGION = 0x140000000;                      //[Static]->Region
-constexpr long OFF_LEVEL = 0x18356C4;                         //[Miscellaneous]->LevelName
-constexpr long OFF_LOCAL_PLAYER = 0x24342B8;                  //[Miscellaneous]->LocalPlayer
-constexpr long OFF_ENTITY_LIST = 0x1F61048;                   //[Miscellaneous]->cl_entitylist
+constexpr long OFF_LEVEL = 0x1836834;                         //[Miscellaneous]->LevelName
+constexpr long OFF_LOCAL_PLAYER = 0x24354F8;                  //[Miscellaneous]->LocalPlayer
+constexpr long OFF_ENTITY_LIST = 0x1F62278;                   //[Miscellaneous]->cl_entitylist
     
 // Buttons
-constexpr long OFF_IN_ATTACK = 0x76E8820;                    //[Buttons]->in_attack
-constexpr long OFF_IN_JUMP = 0x76E8940;                      //[Buttons]->in_jump
-constexpr long OFF_IN_DUCK = 0x76E8A30;                      //[Buttons]->in_duck
-constexpr long OFF_IN_FORWARD = 0x76E8770;                   //[Buttons]->in_forward
+constexpr long OFF_IN_ATTACK = 0x076e9bc0;                    //[Buttons]->in_attack
+constexpr long OFF_IN_JUMP = 0x076e9cb8;                      //[Buttons]->in_jump
+constexpr long OFF_IN_DUCK = 0x076e9db0;                      //[Buttons]->in_duck
+constexpr long OFF_IN_FORWARD = 0x076e9af0;                   //[Buttons]->in_forward
 constexpr long OFF_TRAVERSAL_START_TIME = 0x2b70;             //[Buttons]->m_traversalStartTime
 constexpr long OFF_TRAVERSAL_PROGRESS = 0x2b6c;               //[Buttons]->m_traversalProgress
 constexpr long OFF_WALL_RUN_START_TIME = 0x3674;              //[Buttons]->m_wallRunStartTime
@@ -20,7 +20,7 @@ constexpr long OFF_WALL_RUN_CLEAR_TIME = 0x3678;              //[Buttons]->m_wal
     
 // Player
 constexpr long OFF_VIEW_MATRIX = 0x11A350;                    //[Miscellaneous]->ViewMatrix
-constexpr long OFF_VIEW_RENDER = 0x76E8738;                   //[Miscellaneous]->ViewRender
+constexpr long OFF_VIEW_RENDER = 0x76e9ab8;                   //[Miscellaneous]->ViewRender
 constexpr long OFF_ZOOMING = 0x1be1;                          //[RecvTable.DT_Player]->m_bZooming
 constexpr long OFF_LOCAL_ORIGIN = 0x017c;                     //[DataMap.CBaseViewModel]->m_vecAbsOrigin
 constexpr long OFF_ABSVELOCITY = 0x0170;                      //[DataMap.C_BaseEntity]->m_vecAbsVelocity
@@ -42,7 +42,7 @@ constexpr long OFF_STUDIOHDR = 0x1000;                         //[Miscellaneous]
 constexpr long OFF_BONES = 0x0db0 + 0x48;                     //[RecvTable.DT_BaseAnimating]->m_nForceBone + 0x48
 constexpr long OFF_CAMERAORIGIN = 0x1ee0;                     //[Miscellaneous]->CPlayer!camera_origin
 constexpr long OFF_MODELNAME = 0x0030;                        //[DataMap.C_BaseEntity]->m_ModelName     
-constexpr long OFF_NAMELIST = 0xd388450;                      //[Miscellaneous]->NameList
+constexpr long OFF_NAMELIST = 0xd427360;                      //[Miscellaneous]->NameList
 constexpr long OFF_YAW = 0x223c - 0x8;                        //[DataMap.C_Player]=>m_currentFramePlayer.m_ammoPoolCount - 0x8
 constexpr long OFF_NAMEINDEX = 0x058c;                        //[RecvTable.DT_BaseEntity]->m_instanceNameIndex
 
@@ -61,7 +61,7 @@ constexpr long OFF_PROJECTILESPEED = 0x04ec;                  //[WeaponSettings]
 // Glow
 constexpr long HIGHLIGHT_TYPE_SIZE = 0x34;
 constexpr long OFF_GLOW_THROUGH_WALL = 0x26c;                 //[DT_HighlightSettings].?
-constexpr long OFF_GLOW_FIX = 0x268;
+constexpr long OFF_GLOW_FIX = 0x278;
 constexpr long OFF_GLOW_HIGHLIGHT_ID = 0x29C;                 //[DT_HighlightSettings].m_highlightServerActiveStates
-constexpr long OFF_GLOW_HIGHLIGHTS = 0xB1DA220;               // 0xb13c6a0;
+constexpr long OFF_GLOW_HIGHLIGHTS = 0xb1db5a0;               // 0xb13c6a0;
 constexpr long OFF_GLOW_ENABLE = 0x28c;                       //[DT_HighlightSettings].?
