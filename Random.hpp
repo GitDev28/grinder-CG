@@ -229,7 +229,7 @@ public:
         weaponSkinMap[WEAPON_BOCEK] = { 3 };
         weaponSkinMap[WEAPON_KRABER] = { 6 };
         weaponSkinMap[WEAPON_THROWING_KNIFE] = { 3 };
-        weaponSkinMap[WEAPON_THERMITE_GRENADE] = { 2 }; 
+        // weaponSkinMap[WEAPON_THERMITE_GRENADE] = { 2 }; 
 
         if (m_configLoader->FEATURE_SKINCHANGER_ON){
             int weaponIndex = mem::Read<int>(weapon_entity + OFF_WEAPON_INDEX);

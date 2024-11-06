@@ -76,8 +76,8 @@ struct AimBot {
             // Shotgun Weapons      
             weaponId == WEAPON_MOZAMBIQUE ||
             weaponId == WEAPON_EVA8 ||
-            //weaponId == WEAPON_PEACEKEEPER ||
-            //weaponId == WEAPON_MASTIFF ||
+            weaponId == WEAPON_PEACEKEEPER ||
+            weaponId == WEAPON_MASTIFF ||
 
             // Energy Weapons
             weaponId == WEAPON_HAVOC ||
@@ -85,20 +85,20 @@ struct AimBot {
             weaponId == WEAPON_LSTAR ||
             weaponId == WEAPON_TRIPLE_TAKE ||
             weaponId == WEAPON_VOLT ||
-            //weaponId == WEAPON_NEMESIS ||
+            weaponId == WEAPON_NEMESIS ||
 
             // Sniper Weapons
             //weaponId == WEAPON_LONGBOW ||
             //weaponId == WEAPON_CHARGE_RIFLE ||
-            //weaponId == WEAPON_SENTINEL ||
+            weaponId == WEAPON_SENTINEL ||
 
             // RED Weapons
             weaponId == WEAPON_WINGMAN ||
             weaponId == WEAPON_PROWLER ||
             weaponId == WEAPON_BOCEK ||
             //weaponId == WEAPON_KRABER ||
-            weaponId == WEAPON_THROWING_KNIFE ||
-            weaponId == BUSTER_SWORD_R2R5
+            weaponId == WEAPON_THROWING_KNIFE
+            // weaponId == BUSTER_SWORD_R2R5
             );
 
         bool activatedByAttackingAndIsAttacking = cl->AIMBOT_ACTIVATED_BY_ATTACK && localPlayer->inAttack;

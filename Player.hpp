@@ -63,6 +63,7 @@ struct Player {
         std::string modelName = mem::ReadString(modelOffset, 1024);
         // Check for different player names
         if (modelName.find("dummie") != std::string::npos) modelName = "DUMMIE";
+        else if (modelName.find("alter") != std::string::npos) modelName = "ALTER";
         else if (modelName.find("ash") != std::string::npos) modelName = "ASH";
         else if (modelName.find("ballistic") != std::string::npos) modelName = "BALLISTIC";
         else if (modelName.find("bangalore") != std::string::npos) modelName = "BANGALORE";
@@ -275,23 +276,18 @@ struct Player {
             mem::Write<int>(basePointer + OFF_GLOW_FIX, 0);
         }
         
-        //item Glow
+        //item Glow UPDATE!
+        const std::vector<uint8_t> ItemHighlightID = { 15, 42, 47, 54, 65, 9, 58 }; // Gold, Red, Purple, Blue, Grey, Weapons, Ammo
+
         if (cl->FEATURE_LOBA_ON) {
-            for (int highlightId = 34; highlightId < 40; highlightId++) {
-                const GlowMode newGlowMode = { 137,0,0,127 };
+            for (int highlightId : ItemHighlightID) {
+                const GlowMode newGlowMode = { 137,0,0,127 }; // Or whatever glow settings you want
                 const GlowMode oldGlowMode = mem::Read<GlowMode>(highlightSettingsPtr + (HIGHLIGHT_TYPE_SIZE * highlightId) + 0);
                 
-                if (newGlowMode != oldGlowMode)
+                if (newGlowMode != oldGlowMode) {
                     mem::Write<GlowMode>(highlightSettingsPtr + (HIGHLIGHT_TYPE_SIZE * highlightId) + 0, newGlowMode);
-            } 
-        } else {
-            for (int highlightId = 34; highlightId < 40; highlightId++) {
-                const GlowMode newGlowMode = { 135,135,32,64 };
-                const GlowMode oldGlowMode = mem::Read<GlowMode>(highlightSettingsPtr + (HIGHLIGHT_TYPE_SIZE * highlightId) + 0);
-                
-                if (newGlowMode != oldGlowMode)
-                mem::Write<GlowMode>(highlightSettingsPtr + (HIGHLIGHT_TYPE_SIZE * highlightId) + 0, newGlowMode);
-            } 
+                }
+            }
         }
     }
 

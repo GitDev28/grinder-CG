@@ -1,20 +1,27 @@
 <details>
 <summary>Debian based dependencies</summary>
 
-## Intall build-essential / libx11-dev / libxtst-dev / libxrender-dev (Mandatory. You only need to do this once) !!!
-`
+## Install build-essential / libx11-dev / libxtst-dev / libxrender-dev (Mandatory. You only need to do this once) !!!
+```
 sudo apt-get install build-essential libx11-dev libxtst-dev libxrender-dev
-`
-</details>
+````
 
-<details>
+## Got error like this?
+ `X11/extensions/Xcomposite.h: No such file or directory #include <X11/extensions/Xcomposite.h>`
+
+### Then install this: 
+```sudo apt-get install libxcomposite-dev```
+
+
 <summary>Arch based dependencies</summary>
 
-## Intall base-devel / libx11 / libxtst / libxrender (Mandatory. You only need to do this once) !!!
+## Install base-devel / libx11 / libxtst / libxrender (Mandatory. You only need to do this once) !!!
 `
 sudo pacman -Sy base-devel libx11 libxtst libxrender
 `
 </details>
+
+**Updated to Game Version v3.0.78.32 (Season 22) (21.08.24)**
 
 ### 0. Introduction:
 ```
@@ -33,7 +40,7 @@ CREDITS:
 
 ### 1. Download:
 ```
-git clone https://github.com/GitDev28/grinder-CG.git
+git clone https://github.com/AnonGhostID/grinder-CG.git
 ```
 
 ### 2. Get inside the folder

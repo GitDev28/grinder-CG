@@ -24,7 +24,7 @@ struct TriggerBot {
         int weaponId = localPlayer->weaponIndex;
         // printf("Last weapon held: %s id: %d \n", WeaponName(weaponId).c_str(), weaponId);
         if (
-            //weaponId != WEAPON_KRABER &&
+            weaponId != WEAPON_KRABER &&
             //weaponId != WEAPON_HEMLOCK &&
             //weaponId != WEAPON_NEMESIS &&
             //weaponId != WEAPON_PROWLER &&
